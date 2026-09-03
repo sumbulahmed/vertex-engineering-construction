@@ -1,0 +1,123 @@
+/* ============================================================
+   GOVERNMENT PAGE
+   ============================================================ */
+
+.gov-intro {
+  background: var(--color-bg);
+}
+
+.gov-intro__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+.gov-intro__heading {
+  margin: var(--space-4) 0 0;
+}
+
+/* Categories */
+.gov-categories {
+  background: var(--color-bg-secondary);
+}
+
+.gov-categories__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-12);
+}
+
+.gov-categories__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+}
+
+.gov-category-card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  transition: box-shadow var(--transition-base);
+}
+
+.gov-category-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.gov-category-card__image-wrap {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.gov-category-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gov-category-card:hover .gov-category-card__image {
+  transform: scale(1.05);
+}
+
+.gov-category-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10,10,10,0.4) 0%, transparent 60%);
+}
+
+.gov-category-card__content {
+  padding: var(--space-5) var(--space-5) var(--space-6);
+}
+
+.gov-category-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-3);
+}
+
+.gov-category-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Projects */
+.gov-projects {
+  background: var(--color-bg);
+}
+
+.gov-projects__header {
+  margin-bottom: var(--space-10);
+}
+
+.gov-projects__fallback {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--space-12) 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .gov-categories__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gov-intro__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}
+
+@media (max-width: 640px) {
+  .gov-categories__grid {
+    grid-template-columns: 1fr;
+  }
+}

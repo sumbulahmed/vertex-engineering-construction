@@ -1,0 +1,104 @@
+/* ============================================================
+   FEATURED PROJECTS
+   ============================================================ */
+
+.featured-projects {
+  background: var(--color-bg);
+}
+
+.featured-projects__heading {
+  margin: var(--space-3) 0 0;
+}
+
+.featured-projects__header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  flex-shrink: 0;
+}
+
+/* Filters */
+.featured-projects__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-10);
+}
+
+.featured-projects__filter {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: var(--font-semibold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 1px solid var(--color-border-strong);
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.featured-projects__filter:hover {
+  border-color: var(--color-text-primary);
+  color: var(--color-text-primary);
+}
+
+.featured-projects__filter--active {
+  background: var(--color-charcoal);
+  border-color: var(--color-charcoal);
+  color: #fff;
+}
+
+[data-theme="dark"] .featured-projects__filter--active {
+  background: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+  color: var(--color-bg);
+}
+
+/* Carousel */
+.featured-projects__carousel .owl-stage-outer {
+  overflow: visible;
+}
+
+.featured-projects__carousel .owl-stage {
+  display: flex;
+}
+
+.featured-projects__carousel .owl-item {
+  float: none;
+}
+
+.featured-projects__slide {
+  height: 100%;
+}
+
+.featured-projects__carousel .owl-dots {
+  margin-top: var(--space-8) !important;
+}
+
+.featured-projects__empty {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: var(--space-16) 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .featured-projects__header-right {
+    gap: var(--space-4);
+  }
+
+  .featured-projects__header-right .btn-ghost {
+    display: none;
+  }
+
+  .featured-projects__filters {
+    gap: var(--space-2);
+  }
+
+  .featured-projects__filter {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+}

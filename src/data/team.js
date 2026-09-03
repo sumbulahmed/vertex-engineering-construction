@@ -1,0 +1,42 @@
+export const teamMembers = [
+  {
+    id: 'ayaan-malik',
+    name: 'Ayaan Malik',
+    role: 'Project Director',
+    specialisation: 'Commercial & Government Projects',
+    bio: 'Over 18 years of experience leading large-scale construction delivery across commercial, government and infrastructure sectors. Ayaan oversees project execution strategy and key client relationships.',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80',
+  },
+  {
+    id: 'hamza-farooq',
+    name: 'Hamza Farooq',
+    role: 'Construction Project Manager',
+    specialisation: 'Industrial & Infrastructure',
+    bio: 'Hamza brings 14 years of on-site construction management expertise with a focus on industrial facilities and civil infrastructure. Known for robust programme management and site safety leadership.',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&q=80',
+  },
+  {
+    id: 'sara-ahmed',
+    name: 'Sara Ahmed',
+    role: 'Lead Engineer',
+    specialisation: 'Structural & Civil Engineering',
+    bio: 'Sara is a chartered structural and civil engineer with 12 years of experience on high-rise, bridge and infrastructure projects. She leads Vertex\'s technical engineering team.',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
+  },
+  {
+    id: 'omar-shah',
+    name: 'Omar Shah',
+    role: 'Site Engineer',
+    specialisation: 'Residential & Mixed-Use',
+    bio: 'Omar manages day-to-day site engineering across residential and mixed-use projects. With 8 years of field experience, he is known for meticulous quality control and technical problem-solving.',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80',
+  },
+  {
+    id: 'maya-khan',
+    name: 'Maya Khan',
+    role: 'Architectural Coordinator',
+    specialisation: 'Design Coordination & Delivery',
+    bio: 'Maya bridges the gap between design intent and construction delivery. With a background in architecture and construction management, she ensures design quality is maintained throughout the build.',
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80',
+  },
+];
